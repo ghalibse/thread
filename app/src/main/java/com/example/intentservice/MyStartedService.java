@@ -7,7 +7,7 @@ import android.util.Log;
 
 public class MyStartedService extends Service {
 
-    private static final  String TAG = "MainActivityTAG_";
+    private static final  String TAG = "MyStartedServiceTAG_";
 
     public MyStartedService() {
     }
@@ -16,7 +16,7 @@ public class MyStartedService extends Service {
     public void onCreate() {
         super.onCreate();
 
-        Log.d(TAG, "onCreate" + Thread.currentThread());
+        Log.d(TAG, "onCreate: " + Thread.currentThread());
     }
 
     @Override
